@@ -19,7 +19,8 @@
             android:layout_height="wrap_content"
             android:text="MAD_Alarm_Practical"
             android:textSize="20sp"
-            app:layout_constraintBottom_toTopOf="@id/materialCardView" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/materialCardView"/>
 
 
         <com.google.android.material.card.MaterialCardView
@@ -42,16 +43,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="322dp"
                     android:layout_marginTop="-70dp"
-                    android:src="@drawable/alarm3">
+                    android:src="@drawable/alarm3"/>
 
-                </ImageView>
+
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="-30dp"
-                    android:text="<b>Create Alarm Time </b>\n\nBy pressing buttons you can be created and \ncancelled.\n\nCheck current time by looking below real digital clock"
+                    android:text="Create Alarm Time\n\nBy pressing buttons you can be created and \ncancelled.\n\nCheck current time by looking below real digital clock"
                     android:textSize="15sp" />
 
                 <TextClock
@@ -61,6 +62,7 @@
                     android:format12Hour="dd-MM-yyyy hh:mm:ss a"/>
 
                 <com.google.android.material.button.MaterialButton
+                    android:id="@+id/createalarm"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Create Alarm"
@@ -90,8 +92,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="-70dp"
-                    android:src="@drawable/alarm3">
-                </ImageView>
+                    android:src="@drawable/alarm3"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -102,12 +104,14 @@
 
                 <TextClock
                     android:layout_width="wrap_content"
+                    android:id="@+id/clock2"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="70dp"
                     android:format12Hour="dd-MM-yyyy hh:mm:ss a"/>
 
                 <com.google.android.material.button.MaterialButton
                     android:layout_width="wrap_content"
+                    android:id="@+id/cancelalarm"
                     android:layout_height="wrap_content"
                     android:text="Cancel Alarm"
                     android:textColor="@color/white"
